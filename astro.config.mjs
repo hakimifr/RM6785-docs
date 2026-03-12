@@ -16,6 +16,7 @@ export default defineConfig({
     starlight({
       title: 'RM6785 Docs',
       social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/hakimifr/RM6785-docs' }],
+      favicon: '/favicon.jpg',
       sidebar: [
         {
           label: 'Main',
@@ -31,6 +32,10 @@ export default defineConfig({
         {
           label: 'Troubleshooting',
           autogenerate: { directory: 'troubleshooting' },
+        },
+        {
+          label: 'Appendix',
+          autogenerate: { directory: 'appendix' },
         },
       ],
     }),

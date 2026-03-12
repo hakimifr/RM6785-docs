@@ -4,8 +4,6 @@ title: Bootloader Unlock & Recovery Guide
 
 import { Aside } from '@astrojs/starlight/components';
 
-# Bootloader Unlock Guide for RM6785
-
 <Aside type="caution">
 Please read every section thoroughly before doing anything to
 your device. Make sure you understand how to do each of the steps!
@@ -14,7 +12,7 @@ your device. Make sure you understand how to do each of the steps!
 <Aside type="note">
 Before proceeding with bootloader unlock, you must be in
 realme UI 2.0. If you are on realme UI 3.0, follow this
-[downgrade](../downgrade) guide to go back to realme
+[downgrade](../20_downgrade) guide to go back to realme
 UI 2.0. Similarly, if you're on realme UI 1.0, please update
 to realme UI 2.0 via settings. If the update does not show
 up, follow [this troubleshooting steps](../../troubleshooting/rui2).
@@ -32,7 +30,7 @@ up, follow [this troubleshooting steps](../../troubleshooting/rui2).
    and connect it to the PC. DO NOT release the volume buttons
    until connection succeeds.
 
-<Aside type="caution">
+<Aside type="tip">
 The volume key must be pressed BEFORE connecting it to the PC,
 and keep the key pressed while connecting it. Once it succeeds,
 the key may be released.
@@ -62,12 +60,7 @@ which is what MTK uses as the bootloader.
 
 ### Download the appropriate lk for your device
 
-- realme 6
-  * [RUI 2](https://t.me/rm6785dumppAss/1096)
-
-- realme 7/Narzo 20 Pro/Narzo 30 4G
-  * RUI 2: Same as realme 6
-  * [RUI 3](https://t.me/rm6785dumppAss/1098)
+[click this for list of patched lks](../../appendix/lk)
 
 ### Steps for flashing lk
 
@@ -77,7 +70,7 @@ which is what MTK uses as the bootloader.
    and connect it to the PC. DO NOT release the volume buttons
    until connection succeeds.
 
-<Aside type="caution">
+<Aside type="tip">
 The volume key must be pressed BEFORE connecting it to the PC,
 and keep the key pressed while connecting it. Once it succeeds,
 the key may be released.
@@ -91,37 +84,8 @@ the key may be released.
 
 ## Flashing Recovery
 
-### Recoveries Collection
-
-**RUI2 Recoveries:**
-
-Supported devices: R6 / R6i / R6s / Narzo, R7 / N30 / N20p
-
-- PBRP
-  * [R6 New](https://t.me/rm6785dumppAss/894)
-  * [R7 New](https://t.me/rm6785dumppAss/895)
-- TWRP
-  * [R6 New](https://t.me/rm6785dumppAss/902)
-  * [R6 Old](https://t.me/rm6785dumppAss/920)
-  * [R7 New](https://t.me/rm6785dumppAss/903)
-  * [R7 Old](https://t.me/rm6785dumppAss/919)
-- OrangeFox
-  * [R6 New](https://t.me/rm6785dumppAss/909)
-  * [R6 Old](https://t.me/rm6785dumppAss/914)
-  * [R7 New](https://t.me/rm6785dumppAss/910)
-  * [R7 Old](https://t.me/rm6785dumppAss/912)
-
-**RUI3 Recoveries:**
-
-Supported devices: R7/Narzo/N20p/N30
-
-- TWRP
-  * [R7 New](https://t.me/rm6785dumppAss/930)
-  * [R7 New (Gofar)](https://t.me/gofaraway_roms/1676/2102)
-- OrangeFox
-  * [R7 New](https://t.me/rm6785dumppAss/906)
-  * [R7 Old](https://t.me/rm6785dumppAss/916)
-  * [R7 Older](https://t.me/rm6785dumppAss/924)
+For a list of recoveries and their link, check out
+[recoveries](../../appendix/recoveries) section.
 
 ### Recovery flashing guide
 
