@@ -1,0 +1,40 @@
+---
+title: Switching between ROMs with different RUI version
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+## Slight explanation
+
+realme UI 2.0 and realme UI 3.0 based ROMs both include
+firmware in their flashable package. Therefore, you can
+flash the ROM and you'll automatically be on that realme
+UI firmware. The only extra step is you have to flash
+custom recovery made for that realme UI version.
+
+## Steps
+
+**Suppose you're in RUI 2 ROM, and you want to switch to
+RUI 3 ROM.**
+
+1. Make sure you have downloaded the RUI 3 ROM **and**
+   RUI 3 custom recovery.
+
+1. Boot into your existing custom recovery. Flash the
+   RUI 3 ROM that you desire.
+
+1. Flash custom recovery for RUI 3.
+
+1. If you're clean flashing, format your data.
+
+<Aside type="caution">
+Do not reboot in between these steps. Only after you
+have done all the steps, you may proceed to reboot your
+device.
+</Aside>
+
+<Aside type="tip">
+If you instead want to switch from RUI 3 ROM to RUI 2
+ROM, the step is the same. Just replace RUI 3 ROM and
+RUI 3 recovery in the steps above with RUI 2.
+</Aside>
