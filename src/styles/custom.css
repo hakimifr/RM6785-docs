@@ -1,0 +1,5 @@
+@import '@fontsource/noto-serif-grantha';
+
+:root {
+  --sl-font: 'Noto Serif Grantha', serif;
+}
