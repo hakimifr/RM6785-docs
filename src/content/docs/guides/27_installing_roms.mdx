@@ -1,0 +1,67 @@
+---
+title: ROM Installation Guide
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside type="note">
+Before following this guide, make sure you've unlocked
+bootloader and installed an appropriate recovery. Check
+[this guide](../10_bootloader_unlock) on how to do so.
+</Aside>
+
+## Types of Flashing
+
+Installing a ROM is often called 'flashing' a ROM. There
+are two types of flashing:
+
+1. **Clean flash**, and
+1. **Dirty flash**.
+
+The difference between a _clean flash_ and a _dirty flash_
+is that _clean flash_ wipes your data, and a _dirty flash_
+retains your data.
+
+You must do a clean flash when flashing a ROM that differs
+from your current ROM. For example, switching from LineageOS
+to PixelOS requires a clean flash. Make sure to back up
+your data.
+
+Dirty flash can be performed when upgrading to the same ROM,
+unless the ROM maintainer explicitly tells you to do a clean
+flash.
+
+<Aside type="caution">
+For both clean flash and dirty flash, if you are flashing ROMs
+where the RUI firmware version differ than the one currently
+installed, make sure to flash the right recovery before the last
+step (which is reboot). See [this](../30_switching_rom_diff_rui)
+to learn more.
+</Aside>
+
+## Performing a Clean Flash
+
+1. Reboot to recovery.
+1. Wipe dalvik cache, cache and data.
+1. Flash the ROM (and GAPPS if necessary).
+1. Change filesystem type of userdata/data to f2fs. This will
+   automatically perform a format. See [Caveat](#caveat) section
+   on to why you should just use f2fs instead of ext4.
+1. Reboot to system and you're done.
+
+## Performing a Dirty Flash
+
+1. Reboot to recovery.
+1. Flash the ROM (and GAPPS if necessary).
+1. Wipe cache and dalvik cache. **DO NOT** wipe data.
+1. Reboot to system.
+
+## Caveat
+
+In Android 16, f2fs is mandatory. You cannot dirty flash
+Android 16, even for the same ROM if you were previously
+using ext4, as converting filesystem to f2fs will perform
+a format of your data.
+
+Even in Android 15 and below, there's not much point in using
+ext4 as f2fs boasts a better storage performance.
