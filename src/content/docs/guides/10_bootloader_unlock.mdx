@@ -58,6 +58,17 @@ with mtkclient doesn't make fastboot work out of the box. Patched lk
 is needed to make fastboot work. `lk` stands for 'little kernel',
 which is what MTK uses as the bootloader.
 
+<sub>
+_Technically, you can achieve similar result of unlocking by official
+method. Just ask for `seccfg` dump from someone whose bootloader was
+unlocked via official method, and flash it to your device with
+mtkclient. You don't even need to unlock first via mtkclient. The
+benefit of this (and thus the prior official method) is that you will
+not suffer from dm-verity corruption and therefore don't need patched
+LKs. However this hasn't been tested and you should not do this if
+you're a beginner._
+</sub>
+
 ### Download the appropriate lk for your device
 
 [click this for list of patched lks](../../appendix/lk)
