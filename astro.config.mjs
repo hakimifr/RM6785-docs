@@ -17,26 +17,13 @@ export default defineConfig({
       title: 'RM6785 Docs',
       social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/hakimifr/RM6785-docs' }],
       favicon: '/favicon.jpg',
-      customCss: ['./src/styles/custom.css'],
       sidebar: [
         {
           label: 'Main',
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: 'Main Page', slug: 'index' },
+            { label: 'Moved', slug: '404' },
           ],
-        },
-        {
-          label: 'Guides',
-          autogenerate: { directory: 'guides' },
-        },
-        {
-          label: 'Troubleshooting',
-          autogenerate: { directory: 'troubleshooting' },
-        },
-        {
-          label: 'Appendix',
-          autogenerate: { directory: 'appendix' },
         },
       ],
     }),
